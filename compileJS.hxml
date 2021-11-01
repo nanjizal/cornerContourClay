@@ -1,0 +1,27 @@
+-cp src
+--main cornerContourClay.MainCCC
+--js test.js
+-D clay
+-D clay_web
+-D web
+-D clay_app_id=CornerContourClay
+-D animateCircles
+-lib fracs
+-lib justPath
+-lib pallette
+-lib clay
+-lib htmlHelper
+-lib cornerContour
+
+-lib linc_opengl
+-lib linc_sdl
+-lib linc_ogg
+-lib linc_stb
+-lib linc_timestamp
+-lib linc_openal
+
+--next
+
+-cmd echo '<!DOCTYPE html><meta charset="UTF-8"><html><body><script src="test.js"></script></body></html>' >index.html
+# open html on mac os.
+-cmd open index.html
